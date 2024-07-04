@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: prossertech-com
+  namespace: argocd
+spec:
+  secretName: prossertech-com-tls
+  issuerRef:
+    name: letsencrypt-staging
+  dnsNames:
+  - '*.prossertech.com'
+  - prossertech.com
