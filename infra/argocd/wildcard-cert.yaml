@@ -6,6 +6,7 @@ metadata:
 spec:
   secretName: prossertech-com-tls
   issuerRef:
+    kind: ClusterIssuer
     name: letsencrypt-staging
   dnsNames:
   - '*.prossertech.com'
