@@ -9,11 +9,11 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: argocd-storage.prossertech.com
+  - host: storage.prossertech.com
     http:
       paths:
       - pathType: Prefix
-        path: /
+        path: /argocd
         backend:
           service:
             name: argo-cd-argocd-server
