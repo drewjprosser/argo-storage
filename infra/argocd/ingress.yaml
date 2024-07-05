@@ -11,17 +11,17 @@ spec:
   rules:
   - http:
       paths:
-      - path: /argocd
+      - path: /
         pathType: Prefix
         backend:
           service:
             name: argo-cd-argocd-server
             port:
               name: http
-    host: storage.prossertech.com
+    host: argocd.storage.prossertech.com
   tls:
   - hosts:
-    - storage.prossertech.com
+    - '*.storage.prossertech.com'
     secretName: prossertech-com-tls
 --- 
 # apiVersion: networking.k8s.io/v1
