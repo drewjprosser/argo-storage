@@ -1,0 +1,36 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: minio
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  sources:
+  - repoURL: https://github.com/drewjprosser/argo-storage
+    path: apps/minio
+    targetRevision: HEAD 
+  - chart: operator
+    repoURL: https://operator.min.io
+    targetRevision: 6.0.1
+    helm:
+      releaseName: operator
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: minio
+  syncPolicy:
+    managedNamespaceMetadata:
+      labels:
+        pod-security.kubernetes.io/enforce: privileged
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences:
+  - group: apps 
+    kind: DaemonSet
+    name: node-server
+    jsonPointers:
+    - /status
