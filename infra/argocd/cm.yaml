@@ -5,7 +5,6 @@ metadata:
   annotations:
     meta.helm.sh/release-name: argo-cd
     meta.helm.sh/release-namespace: argocd
-  creationTimestamp: "2024-07-29T15:55:27Z"
   labels:
     app.kubernetes.io/component: server
     app.kubernetes.io/instance: argo-cd
