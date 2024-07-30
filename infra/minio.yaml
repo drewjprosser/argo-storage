@@ -9,7 +9,7 @@ spec:
   project: default
   sources:
   - repoURL: https://github.com/drewjprosser/argo-storage
-    path: apps/minio
+    path: infra/minio
     targetRevision: HEAD 
   - chart: operator
     repoURL: https://operator.min.io
