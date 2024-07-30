@@ -8,8 +8,6 @@ metadata:
 spec:
   cephVersion:
     image: quay.io/ceph/ceph:v18.2.2
-  network: 
-    provider: host
   dataDirHostPath: /var/lib/rook
   mon:
     count: 3
