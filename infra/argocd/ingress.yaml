@@ -23,7 +23,7 @@ spec:
   - hosts:
     - '*.storage.prossertech.com'
     secretName: prossertech-com-tls
---- 
+---
 # apiVersion: networking.k8s.io/v1
 # kind: Ingress
 # metadata:
