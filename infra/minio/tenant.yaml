@@ -14,7 +14,7 @@ spec:
     volumesPerServer: 9
     volumeClaimTemplate:
       apiVersion: v1
-      kind: persistentvolumeclaims
+      kind: PersistentVolumeClaim
       metadata: { }
       spec:
         accessModes:
