@@ -11,7 +11,7 @@ spec:
   pools:
   - servers: 1
     name: s3-pool
-    volumesPerServer: 4
+    volumesPerServer: 9
     volumeClaimTemplate:
       apiVersion: v1
       kind: persistentvolumeclaims
