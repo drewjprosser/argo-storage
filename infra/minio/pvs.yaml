@@ -11,7 +11,7 @@ metadata:
   name: local-01b
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -34,7 +34,7 @@ metadata:
   name: local-02b
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -57,7 +57,7 @@ metadata:
   name: local-03b
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -80,7 +80,7 @@ metadata:
   name: local-01c
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -103,7 +103,7 @@ metadata:
   name: local-02c
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -126,7 +126,7 @@ metadata:
   name: local-03c
 spec:
   capacity:
-    storage: 500Gi
+    storage: 250Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
