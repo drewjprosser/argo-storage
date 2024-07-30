@@ -6,6 +6,8 @@ metadata:
   labels:
     pod-security.kubernetes.io/enforce: privileged
 spec:
+  cleanupPolicy:
+    confirmation: yes-really-destroy-data
   cephVersion:
     image: quay.io/ceph/ceph:v18.2.2
   dataDirHostPath: /var/lib/rook
