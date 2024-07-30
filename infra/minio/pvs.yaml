@@ -20,13 +20,13 @@ spec:
   local:
     path: /dev/vdb
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-01
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-01
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -43,13 +43,13 @@ spec:
   local:
     path: /dev/vdb
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-02
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-02
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -66,13 +66,13 @@ spec:
   local:
     path: /dev/vdb
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-03
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-03
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -89,13 +89,13 @@ spec:
   local:
     path: /dev/vdc
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-01
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-01
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -112,13 +112,13 @@ spec:
   local:
     path: /dev/vdc
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-02
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-02
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -135,13 +135,13 @@ spec:
   local:
     path: /dev/vdc
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-03
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-03
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -158,13 +158,13 @@ spec:
   local:
     path: /dev/vdd
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-01
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-01
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -181,13 +181,13 @@ spec:
   local:
     path: /dev/vdd
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-02
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-02
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -204,11 +204,11 @@ spec:
   local:
     path: /dev/vdd
   nodeAffinity:
-  required:
-    nodeSelectorTerms:
-    - matchExpressions:
-      - key: kubernetes.io/hostname
-        operator: In
-        values:
-        - storage-03
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - storage-03
 ---
