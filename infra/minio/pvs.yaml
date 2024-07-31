@@ -1,4 +1,4 @@
-apiVersion: storage.k8s.io/v1
+hdd1apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
    name: local-storage
@@ -18,7 +18,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdb
+    path: /var/mnt/hdd1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -41,7 +41,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdb
+    path: /var/mnt/hdd1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -64,7 +64,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdb
+    path: /var/mnt/hdd1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -87,7 +87,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdc
+    path: /var/mnt/hdd2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -110,7 +110,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdb
+    path: /var/mnt/hdd1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -133,7 +133,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /dev/vdc
+    path: /var/mnt/hdd2
   nodeAffinity:
     required:
       nodeSelectorTerms:
