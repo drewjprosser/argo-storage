@@ -36,6 +36,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
+  ingressClassName: nginx
   rules:
   - host: s3-console.storage.prossertech.com
     http:
@@ -59,6 +60,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
+  ingressClassName: nginx
   rules:
   - host: s3.storage.prossertech.com
     http:
