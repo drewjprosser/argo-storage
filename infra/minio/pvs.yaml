@@ -41,7 +41,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /var/mnt/hdd2
+    path: /var/mnt/hdd1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -110,7 +110,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /var/mnt/hdd1
+    path: /var/mnt/hdd2
   nodeAffinity:
     required:
       nodeSelectorTerms:
