@@ -12,6 +12,7 @@ spec:
   - servers: 3
     name: pool-0
     volumesPerServer: 2
+    reclaimStorage: true
     volumeClaimTemplate:
       apiVersion: v1
       kind: PersistentVolumeClaim
